@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="17dp"
+    android:layout_marginStart="8dp"
+    tools:context=".interfaces.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:background="@color/yellow"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/deliverToSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/deliverToSection2"
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Deliver to:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="08776 Serenity Ports, New York"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/circle_background"
+                android:contentDescription="Profile icon"
+                android:src="@drawable/ic_profile" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/deliverToSection"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/search_background"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="8dp"
+            android:hint="Search for a vendor or product"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchBar"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            tools:ignore="ScrollViewCount">
+
+            <LinearLayout
+                android:id="@+id/vendorList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:orientation="vertical">
+
+                <!-- foods Section -->
+                <TextView
+                    android:id="@+id/popularRestaurants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/searchBar"
+                    android:layout_marginTop="24dp"
+                    android:text="Dog Foods"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <!-- Food Item -->
+                <RelativeLayout
+                    android:id="@+id/dogFoodsFrag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_below="@id/popularRestaurants"
+                    android:layout_marginTop="16dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/restaurantImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:contentDescription="Restaurant image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dog_foods2"
+                        app:shapeAppearanceOverlay="@style/RoundedImage" />
+
+                    <ImageView
+                        android:id="@+id/goToRestaurantIcon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/restaurantImage"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="-40dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/circle_background"
+                        android:contentDescription="Go to restaurant icon"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:id="@+id/restaurantName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/restaurantImage"
+                        android:layout_marginTop="8dp"
+                        android:text="The Food Place"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/restaurantName"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="5" />
+
+
+                </RelativeLayout>
+
+                <!-- Nutrition Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/searchBar"
+                    android:layout_marginTop="24dp"
+                    android:text="Nutrition Foods"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <!-- Nutrition  Item -->
+                <RelativeLayout
+                    android:id="@+id/nutFoodsFrag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_below="@id/popularRestaurants"
+                    android:layout_marginTop="16dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/nutimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:contentDescription="Restaurant image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nutritional_foods"
+                        app:shapeAppearanceOverlay="@style/RoundedImage" />
+
+                    <ImageView
+                        android:id="@+id/nuticon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/nutimg"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="-40dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/circle_background"
+                        android:contentDescription="Go to restaurant icon"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:id="@+id/nutname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nutimg"
+                        android:layout_marginTop="8dp"
+                        android:text="The Nutrition Place"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <RatingBar
+                        android:id="@+id/nutBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nutname"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="5" />
+
+
+                </RelativeLayout>
+
+                <!-- Knowledge Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/searchBar"
+                    android:layout_marginTop="24dp"
+                    android:text="Dog Care Knowladges"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <!-- Popular Restaurant Item -->
+                <RelativeLayout
+                    android:id="@+id/knowladge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/popularRestaurants"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="80dp"
+                    android:clickable="true">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/eduimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:contentDescription="Restaurant image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/knowledge_23"
+                        app:shapeAppearanceOverlay="@style/RoundedImage" />
+
+                    <ImageView
+                        android:id="@+id/eduicon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/eduimg"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="-40dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/circle_background"
+                        android:contentDescription="Go to restaurant icon"
+                        android:src="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:id="@+id/eduname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/eduimg"
+                        android:layout_marginTop="8dp"
+                        android:text="The Knowledge Place"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <RatingBar
+                        android:id="@+id/eduBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/eduname"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="5" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

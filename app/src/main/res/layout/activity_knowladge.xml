@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".activity.KnowladgeActivity">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="How to Keep Your Dog Healthy?"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="407dp"
+        android:layout_height="794dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:paddingTop="12dp">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="8dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="32dp">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/dimg7" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Your dog relies on you to keep them in good health. A proper diet with healthy dog food, regular exercise and dog grooming, and routine visits with the vet will help keep your pet in top form. But understanding how to keep your dog healthy involves regular maintenance and care. It is important for you to get to know your dog’s habits (eating, drinking, sleeping, and more), since sometimes a change in those habits can be an indication that your dog isn’t feeling well. "
+                    android:textColor="@color/dark_blue"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                    app:srcCompat="@drawable/dimg8" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ask your veterinarian for advice on healthcare and prevention. It’s always a good idea to seek medical advice if you think your dog is ill or hurt. Pet insurance for dogs may also be helpful in dealing with expenses for canine medical care."
+                    android:textColor="@color/dark_blue"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="190dp"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20"
+                    app:srcCompat="@drawable/dimg6" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:text="Dog Coat Health"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="A healthy dog coat, whether short or long, is glossy and soft. Talk to your vet if you see dog dandruff, bald spots, or excessive oiliness."
+                        android:textColor="@color/dark_blue"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Dog Eye Health"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="Healthy dog eyes are bright and shiny. Mucus and watery tears are normal, but a healthy dog likely won’t have a lot of fluid, and any liquid discharge will likely be clear. You’ll want to keep an eye out for the pink lining of the eyelids and make sure it’s not inflamed, swollen, or have a yellow discharge (which may be a sign of dogs with eye infections).Sometimes you can see your dog’s third eyelid, a light membrane, at the inside corner of an eye. The eyelid may slowly come up to cover the eye as the dog goes to sleep. It’s a good idea to contact your vet if the whites of your dog’s eyes turn yellowish or if eyelashes begin rubbing the eyeball."
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dog Ear Health"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="Healthy skin inside your dog’s ears will be light pink and clean. While there might be some yellow or brownish wax, a large amount of wax or crust is abnormal. If your pet has a dog ear infection, there may be redness or swelling inside the ear, or they may scratch their ears or shake their head frequently. Dogs with long ears that hang down may need extra attention to keep the ears dry and clean inside and out."
+                        android:textColor="@color/dark_blue"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dog Nose Health"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="A dog’s nose is usually cool and moist. It can be black, pink, or self-colored (the same color as the coat), depending on the breed. Talk to your vet if you spot discharge from your dog’s nose that isn’t clear or yellowish, thick, bubbly, or foul-smelling. A cool, wet nose does not necessarily mean the dog is healthy, and a dry, warm nose doesn’t necessarily mean they’re sick. Taking your dog’s temperature with a pet thermometer is a better way to tell if your dog might be sick."
+                        android:textColor="@color/dark_blue"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

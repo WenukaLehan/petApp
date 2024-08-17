@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Paw Print"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PetApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.VideoPlayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.KnowladgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OrderTrackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ManageOrdersActivity"
+            android:exported="false" /> <!-- Firebase messaging service -->
+        <!--
+<service
+            android:name="com.example.petapp.Helper.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        -->
+        <activity
+            android:name=".activity.ManageCategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ManageItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ManageUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.EditUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FoodListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ItemDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.SingupActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.IntroActivity2"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.IntroActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
